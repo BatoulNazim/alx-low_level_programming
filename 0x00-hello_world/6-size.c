@@ -1,15 +1,20 @@
 #include <stdio.h>
-#include <string.h>
 
-int main() {
-  char output[100];
-  sprintf(output, "Size of a char: 1 byte(s)\nSize of an int: 4 byte(s)\nSize of a long int: 4 byte(s)\nSize of a long long int: 8 byte(s)\nSize of a float: 4 byte(s)\n");
-  char *newline = strrchr(output, '\n');
-  if (newline != NULL) {
-    *newline = '\0';
-  }
 
-  printf("Actual output: %s\n", output);
+/**
+ * main - Prints the size of various types based on
+ * the computer it is compiled and run on..
+ * Return: Always 0.
+ */
 
-  return 0;
+int main(void)
+
+{
+        printf("Size of a char: %Zu byte(s)\n", sizeof(char));
+
+        printf("Size of an int: %Zu byte(s)\n", sizeof(int));
+        printf("Size of a long int: %Zu byte(s)\n", sizeof(long int));
+        printf("Size of a long long  int: %Zu byte(s)\n", sizeof(long long int));
+        printf("Size of a float: %Zu byte(s)\n", sizeof(float));
+        return (0);
 }
