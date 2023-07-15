@@ -12,7 +12,7 @@ int main(void)
 
 	for (d = '0'; d < '9'; d++)
 	{
-	
+
 	for (p = d + 1; p <= '9'; p++)
 	{
 
@@ -25,8 +25,8 @@ int main(void)
 	putchar(q);
 	if (d == '7' && p == '8')
 	continue;
-       	putchar(',');
-	putchar(' ');
+putchar(',');
+putchar(' ');
 	}
 	}
 	}
