@@ -5,7 +5,6 @@
 /**
  * main -Entry point
  * Return: Always 0 (Success)
- *
  */
 int main(void)
 {
@@ -16,6 +15,7 @@ int main(void)
 	
 	for (p = d + 1; p <= '9'; p++)
 	{
+
 	if (p != d)
 	{
 	putchar(d);
