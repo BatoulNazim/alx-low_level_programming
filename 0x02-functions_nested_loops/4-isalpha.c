@@ -8,8 +8,7 @@
 
 int _isalpha(int c)
 {
-	// The parameter `c` is the character to be tested.
-
+	
 	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
 	{
 	return (1);
