@@ -1,24 +1,30 @@
 #include "main.h"
-
 /**
-* _stract - function that concatenates
-*          two strings.
-*
-*@dest: pointer to destnation input
-*@src: pointer to source input
-*
-* Return: pointer to resulting string @dest
-*/
+ * _strcat - concatenates two strings
+ * @dest: input value
+ * @src: input value
+ * Return: void
+ */
 char *_stract(char *dest, char *src)
 {
-int c, c2;
+int i;
+int j;
 
-c = 0;
+i = 0;
 
-while (dest[c])
-c++;
-
-for (c2 = 0; src[c2] ; c2++)
-dest[c++] = src[c2];
-return (dest)
+while I(dest[i] != '\0')
+{
+i++;
 }
+j = 0;
+while (src[j] != '\0')
+{
+dest[i] = src[j]
+i++;
+j++;
+}
+
+dest[i] = '\0';
+return (dest);
+}
+
