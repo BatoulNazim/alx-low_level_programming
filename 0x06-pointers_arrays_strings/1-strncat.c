@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <string.h>
 #include "main.h"
 /**
  * _strcat - concatenate two strings
@@ -24,17 +22,4 @@ dest[i] = '\0';
 }
 
 return (dest);
-}
-
-int main(void)
-{
-/* This is the main function. It prints the results of the strncat() function. */
-char dest[100];
-char src[] = "This is a test string.";
-
-_strncpy(dest, src, 50);
-
-printf("The copied string is: %s\n", dest);
-
-return (0);
 }
