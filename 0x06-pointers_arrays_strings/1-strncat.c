@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <string.h>
 #include "main.h"
 /**
  * _strcat - concatenate two strings
@@ -10,18 +12,29 @@
 char *_strcat(char *dest, char *src, int n)
 {
 int i;
-int j;
 
-i = 0;
-while I(dest[i])
+for (i = 0; i < n && src[i] != '\0'; i++)
 {
-i++;
-}
-for (j = 0; j  < n && src[j] != '\0'; j++)
-{
-dest[i + j] = src[j];
+dest[i] = src[i];
 }
 
-dest[i + j] = '\0';
+if (i < n)
+{
+dest[i] = '\0';
+}
+
 return (dest);
+}
+
+int main(void)
+{
+/* This is the main function. It prints the results of the strncat() function. */
+char dest[100];
+char src[] = "This is a test string.";
+
+_strncpy(dest, src, 50);
+
+printf("The copied string is: %s\n", dest);
+
+return (0);
 }
