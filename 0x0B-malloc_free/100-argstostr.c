@@ -29,6 +29,7 @@ for (i = 0; i < ac; i++)
 for (n = 0; av[i][n]; n++)
 
 l++;
+
 }
 
 l += ac;
@@ -45,6 +46,7 @@ for (i = 0; i < ac; i++)
 {
 
 for (n = 0; av[i][n]; n++)
+
 {
 
 str[r] = av[i][n];
